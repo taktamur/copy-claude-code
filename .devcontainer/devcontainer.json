@@ -6,10 +6,7 @@
       "TZ": "${localEnv:TZ:America/Los_Angeles}"
     }
   },
-  "runArgs": [
-    "--cap-add=NET_ADMIN",
-    "--cap-add=NET_RAW"
-  ],
+  "runArgs": [],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -46,6 +43,5 @@
     "POWERLEVEL9K_DISABLE_GITSTATUS": "true"
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
-  "workspaceFolder": "/workspace",
-  "postCreateCommand": "sudo /usr/local/bin/init-firewall.sh"
+  "workspaceFolder": "/workspace"
 }
